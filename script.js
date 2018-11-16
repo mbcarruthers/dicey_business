@@ -7,11 +7,7 @@ class Die {
     constructor() {
         this.value = 0;
         this.div = document.createElement("div");
-        this.div.style.height = "100px";
-        this.div.style.width = "100px";
-        this.div.style.textAlign = "center";
-        this.div.style.border = "1px solid black";
-        this.div.style.margin = "1em";
+        this.style_div();
         this.roll();
         container.appendChild(this.div);
     }
@@ -19,6 +15,13 @@ class Die {
     roll() {
         this.value = Math.floor( Math.random() * 6 );
         this.div.innerHTML = "<h1> " + this.value + "</h1>";
+    }
+    style_div() {
+        this.div.style.height = "100px";
+        this.div.style.width = "100px";
+        this.div.style.textAlign = "center";
+        this.div.style.border = "1px solid black";
+        this.div.style.margin = "1em";
     }
 }
 
