@@ -3,3 +3,12 @@
     flex-direction:row;
     flex-wrap:wrap;
 }
+
+.die {
+
+    height: 100px;
+    width:100px;
+    text-align:center;
+    border:1px solid black;
+    margin:1em;
+}

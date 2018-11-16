@@ -7,7 +7,7 @@ class Die {
     constructor() {
         this.value = 0;
         this.div = document.createElement("div");
-        Die.style_div( this.div );
+        this.div.classList.add("die");
         this.roll();
         container.appendChild(this.div);
     }
@@ -17,13 +17,7 @@ class Die {
         this.div.innerHTML = "<h1> " + this.value + "</h1>";
         this.div.style.backgroundColor = `rgb(${Math.floor( Math.random() * 266) }, ${Math.floor( Math.random() * 256) } , ${Math.floor( Math.random() * 256) }`
     }
-   static style_div( div ) {
-       div.style.height = "100px";
-       div.style.width = "100px";
-       div.style.textAlign = "center";
-       div.style.border = "1px solid black";
-       div.style.margin = "1em";
-    }
+
 }
 
 document.addEventListener("DOMContentLoaded" , function() {
