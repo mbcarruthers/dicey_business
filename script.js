@@ -7,7 +7,7 @@ class Die {
     constructor() {
         this.value = 0;
         this.div = document.createElement("div");
-        this.style_div( this.div );
+        Die.style_div( this.div );
         this.roll();
         container.appendChild(this.div);
     }
@@ -16,7 +16,7 @@ class Die {
         this.value = Math.floor( Math.random() * 6 );
         this.div.innerHTML = "<h1> " + this.value + "</h1>";
     }
-    style_div( div ) {
+   static style_div( div ) {
        div.style.height = "100px";
        div.style.width = "100px";
        div.style.textAlign = "center";
