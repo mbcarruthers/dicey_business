@@ -15,7 +15,8 @@ class Die {
     roll() {
         this.value = Math.floor( Math.random() * 6 );
         this.div.innerHTML = "<h1> " + this.value + "</h1>";
-        this.div.style.backgroundColor = `rgb(${Math.floor( Math.random() * 266) }, ${Math.floor( Math.random() * 256) } , ${Math.floor( Math.random() * 256) }`
+        this.div.style.backgroundColor = `rgb(${Math.floor( Math.random() * 256) }, ${Math.floor( Math.random() * 256) } , ${Math.floor( Math.random() * 256) }`
+
     }
 
 }
